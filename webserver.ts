@@ -1,6 +1,6 @@
-// Start listening on port 8080 of localhost.
+// Start listening on port 5000 of localhost.
 const server = Deno.listen({ port: 5000 });
-console.log(`HTTP webserver running. Access it at: http://localhost:8080/`);
+console.log(`HTTP webserver running. Access it at: http://localhost:5000/`);
 
 // Connections to the server will be yielded up as an async iterable.
 for await (const conn of server) {
@@ -18,10 +18,8 @@ async function serveHttp(conn: Deno.Conn) {
     // The native HTTP server uses the web standard `Request` and `Response`
     // objects.
     const body = `
-
       Hello World!
-
-      `;
+    `;
     // The requestEvent's `.respondWith()` method is how we send the response
     // back to the client.
     requestEvent.respondWith(
