@@ -1,3 +1,4 @@
+/*
 // Non-exception Failures
 const user = {
   name: 'Adolfo',
@@ -33,3 +34,4 @@ function greet(person, date) {
 }
 
 greet("Brendan", "27/10/1989");
+*/
