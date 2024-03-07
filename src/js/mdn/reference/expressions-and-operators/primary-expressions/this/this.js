@@ -6,6 +6,8 @@
 //   },
 // };
 
+const { log } = require("util");
+
 // console.log(test.func());
 
 // Function context
@@ -52,11 +54,21 @@
 // console.log(typeof (1).getThisStrict());
 // console.log(typeof getThisStrict());
 
-function getThis() {
-  return this;
-}
+// function getThis() {
+//   return this;
+// }
 
-// Only for demonstration — you should not mutate built-in prototypes
-Number.prototype.getThis = getThis;
-console.log(typeof (1).getThis()); // "object"
-console.log(getThis() === globalThis); // true
+// // Only for demonstration — you should not mutate built-in prototypes
+// Number.prototype.getThis = getThis;
+// console.log(typeof (1).getThis()); // "object"
+// console.log(getThis() === globalThis); // true
+
+// Callbacks
+// function logThis() {
+//   "use strict";
+//   console.log(this);
+// }
+
+// [1, 2, 3].forEach(logThis);
+
+// [1, 2, 3].forEach(logThis, { name: "obj" });
