@@ -46,19 +46,19 @@
 
 // Object Types
 // The parameter's type annotation is an object type
-function printCoord(pt: { x: number; y: number }) {
-  console.log("The coordinate's x value is " + pt.x);
-  console.log("The coordinate's y value is " + pt.y);
-}
-printCoord({ x: 10, y: 5});
+// function printCoord(pt: { x: number; y: number }) {
+//   console.log("The coordinate's x value is " + pt.x);
+//   console.log("The coordinate's y value is " + pt.y);
+// }
+// printCoord({ x: 10, y: 5});
 
 // Optional Properties
-
-
-
-
-
-
-
-
-
+// function printName(obj: { first: string, last?: string }) {
+//   if (obj.last !== undefined) {
+//     console.log(`The name is ${obj.first} ${obj.last}`);
+//   } else if (obj.last == undefined) {
+//     console.log(`The name is ${obj.first}`);
+//   }
+// }
+// printName({ first: "Bob" });
+// printName({ first: "Bob", last: "Marley" });
