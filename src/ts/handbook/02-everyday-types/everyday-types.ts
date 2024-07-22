@@ -106,9 +106,25 @@
 // welcomePeople(["Adolfo", "Jesus"]);
 
 // Return type is inferred as number[] | string
-function getFirstThree(x: number[] | string) {
-  console.log(x.slice(0, 5));
-}
+// function getFirstThree(x: number[] | string) {
+//   console.log(x.slice(0, 5));
+// }
 
-// getFirstThree([1, 3]);
-getFirstThree("Jesus Cristo");
+// // getFirstThree([1, 3]);
+// getFirstThree("Jesus Cristo");
+
+// Type Aliases
+// type Point = {
+//   x: number,
+//   y: number
+// };
+
+// // Exactly the same as the earlier example
+// function printCoord(pt: Point) {
+//   console.log("The coordinate's x value is " + pt.x);
+//   console.log("The coordinate's y value is " + pt.y);
+// }
+
+// printCoord({ x: 100, y: 50 });
+
+// type ID = number | string;
