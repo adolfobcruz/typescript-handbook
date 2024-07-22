@@ -54,3 +54,30 @@
 // }
 // printName({ first: "Bob" });
 // printName({ first: "Bob", last: "Marley" });
+// Union Types
+// Defining a Union Type
+// function printId(id: number | string) {
+//   console.log("Your ID is: " + id);
+// }
+// // OK
+// printId(101);
+// // OK
+// printId("202");
+// // Error
+// // printId({ myID: 22342 });
+// Working with Union Types
+// function printId(id: number | string) {
+//   console.log(id.toUpperCase());
+// }
+function printId(id) {
+    if (typeof id === "string") {
+        // In this branch, id is of type 'string'
+        console.log(id.toUpperCase());
+    }
+    else {
+        // Here, id is of type 'number'
+        console.log(id);
+    }
+}
+printId(101);
+printId("Jesus");
